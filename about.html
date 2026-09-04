@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About LaafStyl | Digital. Entertainment. Lifestyle. Straight out of 7357.</title>
+<meta name="description" content="LaafStyl started as a group of teens on one street in Langebaan in 2014. Today it's a digital ecosystem built on shared skills, shared culture, and the belief that where you're from doesn't limit where you're going.">
+<meta name="author" content="LaafStyl — Langebaan, Western Cape">
+<meta name="geo.region" content="ZA-WC">
+<meta name="geo.placename" content="Langebaan, Western Cape, South Africa">
+<meta property="og:title" content="About LaafStyl — Straight out of 7357">
+<meta property="og:description" content="From a group of teens on one street in Langebaan to a digital ecosystem. The LaafStyl story.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.laafstyl.org/about.html">
+<link rel="canonical" href="https://www.laafstyl.org/about.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About LaafStyl",
+  "url": "https://www.laafstyl.org/about.html",
+  "description": "LaafStyl started as a social club of teens in Langebaan in 2014, relaunched in 2018, and has grown into a digital ecosystem serving South African businesses.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "LaafStyl",
+    "url": "https://www.laafstyl.org",
+    "foundingDate": "2018",
+    "foundingLocation": "Langebaan, Western Cape, South Africa",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Langebaan",
+      "addressRegion": "Western Cape",
+      "postalCode": "7357",
+      "addressCountry": "ZA"
+    },
+    "member": [
+      {"@type": "Person", "name": "Brydon"},
+      {"@type": "Person", "name": "Reekay"},
+      {"@type": "Person", "name": "Andrew"},
+      {"@type": "Person", "name": "Keenan"}
+    ]
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#007847;--green2:#00a85f;--gold:#FFB612;--red:#DE3831;--blue:#00AEEF;--wa:#25D366;
+  --bg:#0f0f0f;--bg2:#161616;--card:#1c1c1c;--card2:#222222;
+  --border:#2a2a2a;--border2:#333333;--muted:#666;--body:#888;--light:#bbb;--white:#fff;
+  --radius:18px;--fh:'Poppins',sans-serif;--fb:'Inter',sans-serif;--fs:'Lora',serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--green);border-radius:2px}
+body{background:var(--bg);color:var(--body);font-family:var(--fb);font-size:16px;line-height:1.7;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:0}
+
+.orb{position:fixed;border-radius:50%;filter:blur(160px);pointer-events:none;z-index:0;animation:drift 18s ease-in-out infinite alternate}
+.orb-1{width:700px;height:700px;background:var(--green);top:-300px;right:-250px;opacity:.06}
+.orb-2{width:500px;height:500px;background:var(--gold);bottom:-220px;left:-180px;opacity:.05;animation-delay:-8s}
+.orb-3{width:400px;height:400px;background:var(--blue);top:45%;left:38%;opacity:.04;animation-delay:-4s}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(50px,35px)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+@keyframes shimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+@keyframes pulse{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+@keyframes waRing{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.4)}50%{box-shadow:0 4px 36px rgba(37,211,102,.65),0 0 0 8px rgba(37,211,102,.07)}}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.sr{opacity:0;transform:translateY(26px);transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1)}
+.srl{opacity:0;transform:translateX(-26px);transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1)}
+.srr{opacity:0;transform:translateX(26px);transition:opacity .65s cubic-bezier(.16,1,.3,1),transform .65s cubic-bezier(.16,1,.3,1)}
+.sr.in,.srl.in,.srr.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:66px;display:flex;align-items:center;padding:0 40px;border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
+nav.solid{background:rgba(15,15,15,.95);backdrop-filter:blur(20px);border-bottom-color:var(--border)}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-logo-text{font-family:var(--fh);font-weight:900;font-size:1.35rem;color:var(--white);letter-spacing:-.02em}
+.logo-img{height:34px;width:auto;display:block;object-fit:contain}
+.logo-img-mob{height:30px;width:auto;display:block;object-fit:contain}
+.nav-links{display:flex;align-items:center;gap:28px;margin-left:auto;list-style:none}
+.nav-links a{font-size:.85rem;font-weight:500;color:var(--body);text-decoration:none;letter-spacing:.04em;transition:color .2s;position:relative}
+.nav-links a:not(.nav-wa-btn):hover{color:var(--white)}
+.nav-links a:not(.nav-wa-btn)::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--green);transition:width .25s}
+.nav-links a:not(.nav-wa-btn):hover::after,.nav-links a.active::after{width:100%}
+.nav-links a.active{color:var(--white)}
+.nav-wa-btn{display:flex;align-items:center;gap:8px;background:var(--wa);color:#fff !important;padding:8px 18px;border-radius:8px;font-weight:700 !important;font-size:.82rem !important;box-shadow:0 4px 14px rgba(37,211,102,.25);transition:background .2s,transform .2s !important}
+.nav-wa-btn:hover{background:#1eb659 !important;transform:translateY(-1px) !important}
+.nav-wa-btn::after{display:none !important}
+.nav-mob{display:none;background:none;border:none;color:var(--white);cursor:pointer;margin-left:auto;padding:4px}
+.mob-overlay{display:none;position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.8);backdrop-filter:blur(4px)}
+.mob-overlay.open{display:flex}
+.mob-panel{width:290px;background:var(--bg2);border-right:1px solid var(--border2);padding:26px;display:flex;flex-direction:column;transform:translateX(-100%);transition:transform .35s cubic-bezier(.77,0,.18,1)}
+.mob-overlay.open .mob-panel{transform:translateX(0)}
+.mob-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:38px}
+.mob-x{background:none;border:1px solid var(--border2);color:var(--white);width:32px;height:32px;border-radius:6px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
+.mob-nav{display:flex;flex-direction:column;gap:4px}
+.mob-nav a{display:block;padding:12px 14px;border-radius:8px;font-family:var(--fh);font-size:14px;font-weight:700;color:var(--light);text-decoration:none;text-transform:uppercase;letter-spacing:.05em;transition:background .2s,color .2s}
+.mob-nav a:hover{background:rgba(0,120,71,.12);color:var(--white)}
+.mob-divider{height:1px;background:var(--border);margin:18px 0}
+.mob-wa{display:flex;align-items:center;justify-content:center;gap:9px;padding:14px;background:var(--wa);color:#fff;border-radius:8px;font-family:var(--fh);font-size:13px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.08em}
+
+/* ── LAYOUT ── */
+.container{max-width:1160px;margin:0 auto;padding:0 40px}
+section{padding:100px 0;position:relative;z-index:1}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:14px}
+.tag::before{content:'';width:14px;height:1.5px;background:var(--green);flex-shrink:0}
+.sec-title{font-family:var(--fh);font-size:clamp(34px,3.8vw,56px);font-weight:900;line-height:.92;letter-spacing:-.035em;color:var(--white);text-transform:uppercase;margin-bottom:16px}
+.sec-title em{font-style:normal;background:linear-gradient(135deg,var(--green),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* ── HERO ── */
+.page-hero{min-height:80vh;display:flex;align-items:center;padding-top:66px;position:relative;overflow:hidden}
+.hero-video-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-video-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28;filter:saturate(.4) brightness(.55)}
+.hero-video-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(15,15,15,.97) 0%,rgba(15,15,15,.88) 40%,rgba(15,15,15,.55) 70%,rgba(15,15,15,.65) 100%),linear-gradient(to bottom,rgba(15,15,15,.6) 0%,transparent 18%,transparent 78%,rgba(15,15,15,.85) 100%);z-index:1}
+.hero-grid{position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(0,120,71,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,120,71,.04) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse 60% 70% at 28% 50%,black 10%,transparent 100%);pointer-events:none}
+.sa-flag-line{position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--green) 0%,var(--green) 25%,var(--gold) 25%,var(--gold) 50%,var(--red) 50%,var(--red) 75%,var(--blue) 75%);z-index:3;opacity:.6}
+.hero-inner{position:relative;z-index:2;max-width:680px}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:20px;background:rgba(0,120,71,.1);border:1px solid rgba(0,120,71,.25);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green2);margin-bottom:22px;opacity:0;animation:fadeUp .6s .3s forwards}
+.hero-pill .pdot{width:6px;height:6px;background:var(--green2);border-radius:50%;animation:pulse 2s infinite}
+.hero-h{font-family:var(--fh);font-size:clamp(40px,6vw,84px);font-weight:900;line-height:.88;letter-spacing:-.045em;color:var(--white);text-transform:uppercase;margin-bottom:8px;overflow-wrap:break-word;word-break:break-word;opacity:0;animation:fadeUp .8s .5s forwards}
+.hero-h .grad{background:linear-gradient(135deg,var(--green) 0%,var(--blue) 50%,var(--green2) 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 6s linear infinite 1.8s}
+.hero-sub{font-family:var(--fs);font-size:1.1rem;line-height:1.8;color:var(--light);max-width:500px;margin:24px 0 0;border-left:3px solid var(--green);padding-left:18px;opacity:0;animation:fadeUp .7s .75s forwards}
+
+/* ── BREADCRUMB ── */
+.breadcrumb{padding:24px 0 0;position:relative;z-index:1}
+.breadcrumb ol{display:flex;align-items:center;gap:8px;list-style:none;flex-wrap:wrap}
+.breadcrumb ol li{font-size:.75rem;color:var(--muted)}
+.breadcrumb ol li a{color:var(--muted);text-decoration:none;transition:color .2s}
+.breadcrumb ol li a:hover{color:var(--green2)}
+.breadcrumb ol li::after{content:'/';margin-left:8px;opacity:.3}
+.breadcrumb ol li:last-child{color:var(--green2);font-weight:600}
+.breadcrumb ol li:last-child::after{display:none}
+
+/* ── ORIGIN STORY ── */
+.origin-section{background:var(--bg)}
+.origin-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.origin-body{font-size:.95rem;line-height:1.9;color:var(--body);margin-bottom:18px}
+.origin-body strong{color:var(--light)}
+.origin-body em{font-style:normal;color:var(--green2);font-weight:600}
+.pull-quote{font-family:var(--fs);font-size:1.3rem;font-style:italic;color:var(--white);border-left:4px solid var(--green);padding:20px 24px;margin:32px 0;background:rgba(0,120,71,.05);border-radius:0 12px 12px 0;line-height:1.65}
+
+/* ── TIMELINE ── */
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:8px;top:8px;bottom:8px;width:1.5px;background:linear-gradient(180deg,var(--green),var(--blue),var(--gold))}
+.tl-item{position:relative;padding:0 0 40px 28px}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{position:absolute;left:-32px;top:4px;width:18px;height:18px;border-radius:50%;border:2px solid;display:flex;align-items:center;justify-content:center;background:var(--bg);flex-shrink:0}
+.tl-item:nth-child(1) .tl-dot{border-color:var(--green);box-shadow:0 0 10px rgba(0,120,71,.3)}
+.tl-item:nth-child(2) .tl-dot{border-color:var(--gold);box-shadow:0 0 10px rgba(255,182,18,.3)}
+.tl-item:nth-child(3) .tl-dot{border-color:var(--blue);box-shadow:0 0 10px rgba(0,174,239,.3)}
+.tl-item:nth-child(4) .tl-dot{border-color:var(--green2);box-shadow:0 0 10px rgba(0,168,95,.3)}
+.tl-item:nth-child(5) .tl-dot{border-color:var(--gold);box-shadow:0 0 10px rgba(255,182,18,.3)}
+.tl-dot-inner{width:6px;height:6px;border-radius:50%}
+.tl-item:nth-child(1) .tl-dot-inner{background:var(--green)}
+.tl-item:nth-child(2) .tl-dot-inner{background:var(--gold)}
+.tl-item:nth-child(3) .tl-dot-inner{background:var(--blue)}
+.tl-item:nth-child(4) .tl-dot-inner{background:var(--green2)}
+.tl-item:nth-child(5) .tl-dot-inner{background:var(--gold)}
+.tl-year{font-family:var(--fh);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.tl-item:nth-child(1) .tl-year{color:var(--green2)}
+.tl-item:nth-child(2) .tl-year{color:var(--gold)}
+.tl-item:nth-child(3) .tl-year{color:var(--blue)}
+.tl-item:nth-child(4) .tl-year{color:var(--green2)}
+.tl-item:nth-child(5) .tl-year{color:var(--gold)}
+.tl-title{font-family:var(--fh);font-size:.95rem;font-weight:800;color:var(--white);margin-bottom:5px}
+.tl-desc{font-size:.85rem;line-height:1.7;color:var(--body)}
+
+/* ── MISSION / VALUES ── */
+.mission-section{background:var(--bg2)}
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.mission-statement{font-family:var(--fs);font-size:1.35rem;font-style:italic;line-height:1.7;color:var(--white);margin-bottom:24px}
+.mission-body{font-size:.95rem;line-height:1.85;color:var(--body);margin-bottom:16px}
+.mission-body strong{color:var(--light)}
+.values-grid{display:flex;flex-direction:column;gap:14px}
+.value-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 20px;display:flex;align-items:flex-start;gap:14px;transition:border-color .2s,transform .2s;cursor:default}
+.value-card:hover{border-color:var(--border2);transform:translateX(4px)}
+.value-ico{width:40px;height:40px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.v1{background:rgba(0,120,71,.1);border:1px solid rgba(0,120,71,.2)}
+.v2{background:rgba(255,182,18,.08);border:1px solid rgba(255,182,18,.2)}
+.v3{background:rgba(0,174,239,.08);border:1px solid rgba(0,174,239,.2)}
+.v4{background:rgba(222,56,49,.07);border:1px solid rgba(222,56,49,.18)}
+.value-title{font-family:var(--fh);font-size:.88rem;font-weight:700;color:var(--white);margin-bottom:3px}
+.value-desc{font-size:.8rem;line-height:1.6;color:var(--muted)}
+
+/* ── TEAM ── */
+.team-section{background:var(--bg)}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.team-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px 20px;text-align:center;transition:transform .25s,border-color .25s,box-shadow .25s;position:relative;overflow:hidden}
+.team-card:hover{transform:translateY(-6px);border-color:rgba(0,120,71,.25);box-shadow:0 18px 52px rgba(0,0,0,.4)}
+.team-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.team-card:nth-child(1)::before{background:linear-gradient(90deg,var(--green),var(--green2))}
+.team-card:nth-child(2)::before{background:linear-gradient(90deg,var(--gold),#e09000)}
+.team-card:nth-child(3)::before{background:linear-gradient(90deg,var(--blue),#0077bb)}
+.team-card:nth-child(4)::before{background:linear-gradient(90deg,var(--red),#c02020)}
+.team-avatar{width:72px;height:72px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:1.6rem;font-weight:900;color:#fff}
+.team-card:nth-child(1) .team-avatar{background:linear-gradient(135deg,var(--green),var(--blue))}
+.team-card:nth-child(2) .team-avatar{background:linear-gradient(135deg,var(--gold),#c07000)}
+.team-card:nth-child(3) .team-avatar{background:linear-gradient(135deg,var(--blue),#0055aa)}
+.team-card:nth-child(4) .team-avatar{background:linear-gradient(135deg,var(--red),#a01010)}
+.team-name{font-family:var(--fh);font-size:1rem;font-weight:800;color:var(--white);margin-bottom:4px}
+.team-role{font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.team-card:nth-child(1) .team-role{color:var(--green2)}
+.team-card:nth-child(2) .team-role{color:var(--gold)}
+.team-card:nth-child(3) .team-role{color:var(--blue)}
+.team-card:nth-child(4) .team-role{color:#f07070}
+.team-desc{font-size:.8rem;line-height:1.65;color:var(--muted)}
+
+/* ── COLLAB STRIP ── */
+.collab-strip{background:linear-gradient(135deg,rgba(0,120,71,.08),rgba(0,174,239,.05));border-top:1px solid rgba(0,120,71,.15);border-bottom:1px solid rgba(0,120,71,.15);padding:56px 0}
+.collab-inner{text-align:center;max-width:640px;margin:0 auto}
+.collab-title{font-family:var(--fh);font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:var(--white);letter-spacing:-.02em;margin-bottom:12px;text-transform:uppercase}
+.collab-title em{font-style:normal;background:linear-gradient(135deg,var(--green),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.collab-sub{font-size:.95rem;color:var(--body);line-height:1.75;margin-bottom:28px}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:var(--wa);color:#fff;padding:14px 28px;border-radius:10px;font-family:var(--fh);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;box-shadow:0 6px 24px rgba(37,211,102,.3);transition:background .2s,transform .2s}
+.btn-wa:hover{background:#1eb659;transform:translateY(-2px)}
+.btn-outline{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--light);padding:14px 28px;border-radius:10px;font-family:var(--fh);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1.5px solid var(--border2);transition:border-color .2s,color .2s,transform .2s;margin-left:8px}
+.btn-outline:hover{border-color:var(--green);color:var(--white);transform:translateY(-2px)}
+
+/* ── PRODUCTS CTA ── */
+.products-cta{background:var(--bg2);padding:80px 0}
+.eco-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.eco-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;text-align:center;text-decoration:none;transition:transform .2s,border-color .2s}
+.eco-card:hover{transform:translateY(-4px)}
+.eco-card:nth-child(1):hover{border-color:rgba(0,120,71,.3)}
+.eco-card:nth-child(2):hover{border-color:rgba(0,174,239,.3)}
+.eco-card:nth-child(3):hover{border-color:rgba(255,182,18,.3)}
+.eco-card:nth-child(4):hover{border-color:rgba(222,56,49,.25)}
+.eco-ico{font-size:2rem;margin-bottom:10px;display:block}
+.eco-name{font-family:var(--fh);font-size:.9rem;font-weight:800;color:var(--white);margin-bottom:4px}
+.eco-url{font-size:.72rem;color:var(--muted)}
+
+/* ── FOOTER ── */
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:28px 0;position:relative;z-index:1}
+.foot-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap}
+.foot-links a{font-size:12px;color:var(--muted);text-decoration:none;transition:color .2s}
+.foot-links a:hover{color:var(--green2)}
+.foot-copy{font-size:11px;color:var(--muted)}
+.wa-float{position:fixed;bottom:26px;right:26px;z-index:100;width:58px;height:58px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.45);transition:transform .25s;animation:waRing 4s 6s infinite}
+.wa-float:hover{transform:scale(1.12);animation:none}
+
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .nav-mob{display:flex}
+  .container{padding:0 20px}
+  section{padding:72px 0}
+  .origin-grid,.mission-grid{grid-template-columns:1fr;gap:48px}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .eco-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-inner{flex-direction:column;text-align:center}
+  .foot-links{justify-content:center}
+  .btn-outline{margin-left:0;margin-top:10px}
+}
+@media(max-width:480px){
+  .team-grid{grid-template-columns:1fr}
+  .eco-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="LaafStyl" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span class="nav-logo-text" style="display:none">LaafStyl</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="index.html#products">Products</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li>
+      <a href="https://wa.me/27636691391?text=Hi%20LaafStyl%2C%20I%27d%20like%20to%20collaborate" class="nav-wa-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp Us
+      </a>
+    </li>
+  </ul>
+  <button class="nav-mob" onclick="openMob()" aria-label="Menu">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+
+<div class="mob-overlay" id="mobOverlay" onclick="closeMobOut(event)">
+  <div class="mob-panel">
+    <div class="mob-head">
+      <img src="logo.png" alt="LaafStyl" class="logo-img-mob" onerror="this.style.display='none'">
+      <button class="mob-x" onclick="closeMob()">✕</button>
+    </div>
+    <div class="mob-nav">
+      <a href="index.html" onclick="closeMob()">Home</a>
+      <a href="about.html" onclick="closeMob()">About</a>
+      <a href="index.html#products" onclick="closeMob()">Products</a>
+      <a href="contact.html" onclick="closeMob()">Contact</a>
+    </div>
+    <div class="mob-divider"></div>
+    <a href="https://wa.me/27636691391?text=Hi%20LaafStyl%2C%20I%27d%20like%20to%20collaborate" class="mob-wa" target="_blank" rel="noopener" onclick="closeMob()">
+      <svg viewBox="0 0 24 24" fill="white" width="14" height="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      WhatsApp Us
+    </a>
+  </div>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="hero-video-bg">
+      <video autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <source src="views.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-grid"></div>
+    <div class="sa-flag-line"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:36px">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>About</li>
+        </ol>
+      </nav>
+      <div class="hero-inner">
+        <div class="hero-pill"><span class="pdot"></span> Langebaan · Western Cape · 7357</div>
+        <h1 class="hero-h">Straight<br>Out of<br><span class="grad">7357</span></h1>
+        <p class="hero-sub">
+          LaafStyl didn't start in a boardroom or a startup incubator. It started on a street in Langebaan — a group of teenagers from different families, different cultures, different everything. What they had in common was a postcode and a drive to build something real.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORIGIN STORY -->
+  <section class="origin-section">
+    <div class="container">
+      <div class="origin-grid">
+        <div class="srl">
+          <div class="tag">Our Story</div>
+          <h2 class="sec-title">From One Street<br>to a <em>Digital Ecosystem</em></h2>
+
+          <p class="origin-body">
+            It started in <strong>2014</strong> as a social club — informally called <em>Lifestyle Family</em>. A group of teenagers in Langebaan, living on the same street, from completely different backgrounds. Different families. Different cultures. Different languages. Different everything.
+          </p>
+          <p class="origin-body">
+            What pulled them together wasn't similarity — it was proximity, and eventually, genuine friendship. The name reflected what they were: a family by lifestyle, not by blood. A group of people who chose each other.
+          </p>
+          <p class="origin-body">
+            The group stuck together as they grew up. By <strong>2018</strong>, the name evolved — <em>Lifestyle Family</em> became <strong>LaafStyl</strong>. The social club became something bigger. Instead of just hanging out, they started asking: <em>what if we actually built something?</em>
+          </p>
+
+          <div class="pull-quote">
+            "We had different skills, different ideas, different backgrounds — but we were all from the same street. That was enough to start with."
+          </div>
+
+          <p class="origin-body">
+            Today LaafStyl is no longer just a group of friends. It's a focused digital ecosystem — <strong>built by people from the West Coast, for people across South Africa</strong>. The vibe is still the same. The ambition is just bigger.
+          </p>
+          <p class="origin-body">
+            We're <strong>open to collaborations</strong> with other companies, creatives, and entities who share our values — build real things, serve real people, don't overcomplicate it.
+          </p>
+        </div>
+
+        <div class="srr">
+          <div class="tag">Timeline</div>
+          <h3 style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:32px;text-transform:uppercase;letter-spacing:-.01em">How We Got Here</h3>
+          <div class="timeline">
+            <div class="tl-item sr">
+              <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+              <div class="tl-year">2014</div>
+              <div class="tl-title">Lifestyle Family is Born</div>
+              <div class="tl-desc">A group of teens on one street in Langebaan form an informal social club. Different backgrounds, same postcode. The seed is planted.</div>
+            </div>
+            <div class="tl-item sr d1">
+              <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+              <div class="tl-year">2018</div>
+              <div class="tl-title">LaafStyl Launches</div>
+              <div class="tl-desc">The social club grows up. Lifestyle Family becomes LaafStyl — a proper name for a proper mission: combine skills and turn them into something real.</div>
+            </div>
+            <div class="tl-item sr d2">
+              <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+              <div class="tl-year">2024</div>
+              <div class="tl-title">LaafShuttle &amp; LaafConnect Launch</div>
+              <div class="tl-desc">First digital products go live. LaafShuttle brings online booking to West Coast transport operators. LaafConnect brings WhatsApp AI to SA small businesses.</div>
+            </div>
+            <div class="tl-item sr d3">
+              <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+              <div class="tl-year">2025</div>
+              <div class="tl-title">LaafWeb &amp; LaafEntertain Launch</div>
+              <div class="tl-desc">LaafWeb begins building affordable websites for West Coast small businesses. LaafEntertain launches as the local entertainment guide for the region.</div>
+            </div>
+            <div class="tl-item sr d4">
+              <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+              <div class="tl-year">2026</div>
+              <div class="tl-title">The Ecosystem Grows</div>
+              <div class="tl-desc">Four products live. Clients across the West Coast and beyond. Still based in 7357. Still building. Open to collaborations and partnerships.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission-section">
+    <div class="container">
+      <div class="mission-grid">
+        <div class="srl">
+          <div class="tag">Mission &amp; Vision</div>
+          <h2 class="sec-title">Why We<br><em>Build</em></h2>
+          <p class="mission-statement">"To simplify and elevate modern living by combining innovative digital solutions, creative entertainment experiences, and reliable lifestyle services."</p>
+          <p class="mission-body">
+            South Africa is full of small businesses, talented people, and communities that deserve <strong>better tools than what the big agencies offer</strong>. We build for them — practical, affordable, and designed for the way South Africans actually live and work.
+          </p>
+          <p class="mission-body">
+            Everything we build comes back to three things: <strong>digital, entertainment, and lifestyle</strong>. Not as abstract concepts — but as real products that help people connect, move, grow, and enjoy their lives.
+          </p>
+          <p class="mission-body">
+            We're not trying to be the next Cape Town startup. We're trying to be the best version of what we already are — a crew from Langebaan that builds things that work.
+          </p>
+        </div>
+        <div class="srr">
+          <div class="values-grid">
+            <div class="value-card sr">
+              <div class="value-ico v1">🇿🇦</div>
+              <div>
+                <div class="value-title">Built South African</div>
+                <div class="value-desc">Every product is shaped by the South African context — our languages, our infrastructure, our way of doing things. Not imported and adapted. Built here from scratch.</div>
+              </div>
+            </div>
+            <div class="value-card sr d1">
+              <div class="value-ico v2">🤝</div>
+              <div>
+                <div class="value-title">Open to Collaboration</div>
+                <div class="value-desc">We actively welcome partnerships with other companies, creatives, and entities. If your skills complement ours, let's talk. We grow faster together.</div>
+              </div>
+            </div>
+            <div class="value-card sr d2">
+              <div class="value-ico v3">⚡</div>
+              <div>
+                <div class="value-title">Practical Over Perfect</div>
+                <div class="value-desc">We ship things that work. We don't wait for perfect. We build, test, improve — and we stay close to our clients so we know what to fix.</div>
+              </div>
+            </div>
+            <div class="value-card sr d3">
+              <div class="value-ico v4">📈</div>
+              <div>
+                <div class="value-title">Skills into Profits</div>
+                <div class="value-desc">LaafStyl exists to turn the collective skills of our team into sustainable products. We're not a hobby project — we're building a business that lasts.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:8px">
+        <div class="tag sr" style="justify-content:center">The Crew</div>
+        <h2 class="sec-title sr">Same Street.<br><em>Different Skills.</em></h2>
+        <p style="font-size:.95rem;color:var(--body);max-width:480px;margin:0 auto" class="sr">We started as neighbours. We're still a crew. Each of us brings something different — that's always been the point.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card sr">
+          <div class="team-avatar">B</div>
+          <div class="team-name">Brydon</div>
+          <div class="team-role">Web &amp; Product</div>
+          <div class="team-desc">Builds and runs LaafWeb — websites for West Coast small businesses. Handles front-end, design, and client delivery.</div>
+        </div>
+        <div class="team-card sr d1">
+          <div class="team-avatar">R</div>
+          <div class="team-name">Reekay</div>
+          <div class="team-role">Operations</div>
+          <div class="team-desc">Part of the LaafStyl family since the beginning. Keeps things running and grounded in what actually matters.</div>
+        </div>
+        <div class="team-card sr d2">
+          <div class="team-avatar">A</div>
+          <div class="team-name">Andrew</div>
+          <div class="team-role">Creative</div>
+          <div class="team-desc">Brings the creative perspective to the team. Entertainment, content, and the cultural thread that runs through everything LaafStyl does.</div>
+        </div>
+        <div class="team-card sr d3">
+          <div class="team-avatar">K</div>
+          <div class="team-name">Keenan</div>
+          <div class="team-role">Strategy</div>
+          <div class="team-desc">Thinks about where LaafStyl is going. Long-term vision, partnerships, and making sure we don't lose the plot as we grow.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLAB STRIP -->
+  <div class="collab-strip">
+    <div class="container">
+      <div class="collab-inner sr">
+        <div class="tag" style="justify-content:center">Collaborations</div>
+        <h2 class="collab-title">Open to<br><em>Building Together</em></h2>
+        <p class="collab-sub">We're actively looking for partners — companies, creatives, developers, and entities who want to build something real. If you have skills we don't, or markets we haven't reached, let's talk.</p>
+        <div>
+          <a href="https://wa.me/27636691391?text=Hi%20LaafStyl%2C%20I%27d%20like%20to%20discuss%20a%20collaboration" class="btn-wa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="white" width="15" height="15"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Let's Collaborate
+          </a>
+          <a href="contact.html" class="btn-outline">See Contact Details →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS QUICK LINKS -->
+  <section class="products-cta">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:36px">
+        <div class="tag sr" style="justify-content:center">The Ecosystem</div>
+        <h2 class="sec-title sr" style="font-size:clamp(24px,2.5vw,36px)">What We've <em>Built</em></h2>
+      </div>
+      <div class="eco-grid">
+        <a href="https://web.laafstyl.org" class="eco-card sr" target="_blank" rel="noopener">
+          <span class="eco-ico">🌐</span>
+          <div class="eco-name">LaafWeb</div>
+          <div class="eco-url">web.laafstyl.org</div>
+        </a>
+        <a href="https://register.laafstyl.org" class="eco-card sr d1" target="_blank" rel="noopener">
+          <span class="eco-ico">💬</span>
+          <div class="eco-name">LaafConnect</div>
+          <div class="eco-url">register.laafstyl.org</div>
+        </a>
+        <a href="https://shuttle.laafstyl.org" class="eco-card sr d2" target="_blank" rel="noopener">
+          <span class="eco-ico">🚐</span>
+          <div class="eco-name">LaafShuttle</div>
+          <div class="eco-url">shuttle.laafstyl.org</div>
+        </a>
+        <a href="https://entertain.laafstyl.org" class="eco-card sr d3" target="_blank" rel="noopener">
+          <span class="eco-ico">🎉</span>
+          <div class="eco-name">LaafEntertain</div>
+          <div class="eco-url">entertain.laafstyl.org</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div style="font-family:var(--fh);font-weight:900;font-size:.95rem;color:var(--white)">LaafStyl</div>
+      <div class="foot-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#products">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <div class="foot-copy">© 2026 LaafStyl (Pty) Ltd · Built in 🇿🇦 Langebaan, 7357</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/27636691391?text=Hi%20LaafStyl%2C%20I%27d%20like%20to%20collaborate" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp LaafStyl">
+  <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+window.addEventListener('scroll', () => { document.getElementById('nav').classList.toggle('solid', scrollY > 50); });
+const ro = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }); }, { threshold: .08, rootMargin: '0px 0px -28px 0px' });
+document.querySelectorAll('.sr,.srl,.srr').forEach(el => ro.observe(el));
+function openMob()  { document.getElementById('mobOverlay').classList.add('open'); }
+function closeMob() { document.getElementById('mobOverlay').classList.remove('open'); }
+function closeMobOut(e) { if (e.target === document.getElementById('mobOverlay')) closeMob(); }
+</script>
+</body>
+</html>
