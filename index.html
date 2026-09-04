@@ -102,6 +102,9 @@
   --gold:   #FFB612;
   --red:    #DE3831;
   --blue:   #00AEEF;
+  --purple: #8B5CF6;
+  --teal:   #14B8A6;
+  --amber:  #F5A623;
   --wa:     #25D366;
   --bg:     #0f0f0f;
   --bg2:    #161616;
@@ -448,10 +451,16 @@ nav.solid { background:rgba(15,15,15,.95); backdrop-filter:blur(20px); border-bo
 .prod-card.c-gold::before  { background:linear-gradient(90deg,var(--gold),#e09000); }
 .prod-card.c-blue::before  { background:linear-gradient(90deg,var(--blue),#0077bb); }
 .prod-card.c-red::before   { background:linear-gradient(90deg,var(--red),#c02020); }
+.prod-card.c-purple::before{ background:linear-gradient(90deg,var(--purple),#6d3fd6); }
+.prod-card.c-teal::before  { background:linear-gradient(90deg,var(--teal),#0d8c7d); }
+.prod-card.c-amber::before { background:linear-gradient(90deg,var(--amber),#c9800f); }
 .prod-card:hover.c-green { border-color:rgba(0,120,71,.35); }
 .prod-card:hover.c-gold  { border-color:rgba(255,182,18,.3); }
 .prod-card:hover.c-blue  { border-color:rgba(0,174,239,.3); }
 .prod-card:hover.c-red   { border-color:rgba(222,56,49,.25); }
+.prod-card:hover.c-purple{ border-color:rgba(139,92,246,.32); }
+.prod-card:hover.c-teal  { border-color:rgba(20,184,166,.32); }
+.prod-card:hover.c-amber { border-color:rgba(245,166,35,.3); }
 
 /* shimmer sweep */
 .prod-shim { position:absolute; top:0; left:0; width:60px; height:100%; background:linear-gradient(90deg,transparent,rgba(255,255,255,.035),transparent); animation:cardShim 4s ease-in-out infinite; pointer-events:none; }
@@ -462,6 +471,9 @@ nav.solid { background:rgba(15,15,15,.95); backdrop-filter:blur(20px); border-bo
 .c-gold  .prod-ico { background:rgba(255,182,18,.1); border:1px solid rgba(255,182,18,.22); }
 .c-blue  .prod-ico { background:rgba(0,174,239,.1);  border:1px solid rgba(0,174,239,.22); }
 .c-red   .prod-ico { background:rgba(222,56,49,.09); border:1px solid rgba(222,56,49,.2); }
+.c-purple .prod-ico{ background:rgba(139,92,246,.13); border:1px solid rgba(139,92,246,.25); }
+.c-teal   .prod-ico{ background:rgba(20,184,166,.13); border:1px solid rgba(20,184,166,.25); }
+.c-amber  .prod-ico{ background:rgba(245,166,35,.12); border:1px solid rgba(245,166,35,.24); }
 
 .prod-cat {
   display:inline-flex; align-items:center;
@@ -472,6 +484,9 @@ nav.solid { background:rgba(15,15,15,.95); backdrop-filter:blur(20px); border-bo
 .c-gold  .prod-cat { background:rgba(255,182,18,.1); border:1px solid rgba(255,182,18,.2); color:var(--gold); }
 .c-blue  .prod-cat { background:rgba(0,174,239,.1);  border:1px solid rgba(0,174,239,.2); color:var(--blue); }
 .c-red   .prod-cat { background:rgba(222,56,49,.09); border:1px solid rgba(222,56,49,.18); color:#f07070; }
+.c-purple .prod-cat{ background:rgba(139,92,246,.11); border:1px solid rgba(139,92,246,.22); color:#a888f8; }
+.c-teal   .prod-cat{ background:rgba(20,184,166,.11); border:1px solid rgba(20,184,166,.22); color:#3fd4c1; }
+.c-amber  .prod-cat{ background:rgba(245,166,35,.1);  border:1px solid rgba(245,166,35,.2);  color:var(--amber); }
 
 .prod-name { font-family:var(--fh); font-size:clamp(22px,2.2vw,28px); font-weight:900; color:var(--white); margin-bottom:8px; letter-spacing:-.02em; line-height:1.1; }
 .prod-desc { font-size:14px; line-height:1.7; color:var(--body); flex:1; margin-bottom:24px; }
@@ -485,7 +500,22 @@ nav.solid { background:rgba(15,15,15,.95); backdrop-filter:blur(20px); border-bo
 .c-gold  .prod-url { color:var(--gold); }
 .c-blue  .prod-url { color:var(--blue); }
 .c-red   .prod-url { color:#f07070; }
+.c-purple .prod-url{ color:#a888f8; }
+.c-teal   .prod-url{ color:#3fd4c1; }
+.c-amber  .prod-url{ color:var(--amber); }
 .prod-card:hover .prod-url { gap:12px; }
+
+/* venture badge */
+.prod-badge {
+  display:inline-flex; align-items:center; gap:5px;
+  font-size:9.5px; font-weight:600; letter-spacing:.06em; color:var(--muted);
+  margin-top:-10px; margin-bottom:16px;
+}
+.prod-badge svg { flex-shrink:0; opacity:.6; }
+
+/* ventures sub-header, slightly separated from the digital grid above */
+.ventures-hd { text-align:center; margin:64px 0 40px; padding-top:44px; border-top:1px solid var(--border); }
+.ventures-hd .tag { justify-content:center; }
 
 /* ══════════════════════════════════
    WHY LAAFSTYL — PILLARS
@@ -852,8 +882,8 @@ footer {
   <div class="container">
     <div class="products-hd">
       <div class="tag sr">What We Build</div>
-      <h2 class="sec-title sr">The Laafstyl <em>Ecosystem</em></h2>
-      <p class="sec-sub sr" style="margin:0 auto;text-align:center">Four products. One vision. Built to help South Africans connect, move, grow, and enjoy life.</p>
+      <h2 class="sec-title sr">The Laafstyl <em>Digital</em> Products</h2>
+      <p class="sec-sub sr" style="margin:0 auto;text-align:center">Four products. One vision. Built to help South African businesses connect, move, grow, and enjoy life.</p>
     </div>
 
     <div class="products-grid">
@@ -914,6 +944,50 @@ footer {
         <div class="prod-desc">Your local entertainment and lifestyle guide for the West Coast. Events, live music, restaurants, things to do, and places to see — from Langebaan to Velddrif and everywhere in between.</div>
         <div class="prod-url">
           entertain.laafstyl.org
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="ventures-hd">
+      <div class="tag sr">Real Local Businesses</div>
+      <h2 class="sec-title sr">LaafStyl <em>Ventures</em></h2>
+      <p class="sec-sub sr" style="margin:0 auto;text-align:center">Not software — real businesses on the West Coast, supported and hosted under the LaafStyl umbrella.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Bright Future Aftercare -->
+      <a href="https://care.laafstyl.org" class="prod-card c-teal sr" target="_blank" rel="noopener">
+        <div class="prod-shim"></div>
+        <div class="prod-top">
+          <div class="prod-ico">🧒</div>
+          <span class="prod-cat">After-School Care</span>
+        </div>
+        <div class="prod-name">Bright Future Aftercare</div>
+        <div class="prod-badge">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          Sponsored by LaafStyl
+        </div>
+        <div class="prod-desc">Trusted after-school childcare and homework support for primary school children in Langebaan, run by Belinda Rodgers.</div>
+        <div class="prod-url">
+          care.laafstyl.org
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- ChromeWorkx -->
+      <a href="https://auto.laafstyl.org" class="prod-card c-purple sr d1" target="_blank" rel="noopener">
+        <div class="prod-shim"></div>
+        <div class="prod-top">
+          <div class="prod-ico">🚗</div>
+          <span class="prod-cat">Mobile Car Wash</span>
+        </div>
+        <div class="prod-name">ChromeWorkx</div>
+        <div class="prod-desc">Premium mobile car wash and detailing for the West Coast — BROD Traders' vehicle care division. We come to you, or wash your fleet on-site.</div>
+        <div class="prod-url">
+          auto.laafstyl.org
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </div>
       </a>
@@ -1104,6 +1178,11 @@ footer {
           <a href="https://register.laafstyl.org" target="_blank">LaafConnect</a>
           <a href="https://shuttle.laafstyl.org" target="_blank">LaafShuttle</a>
           <a href="https://entertain.laafstyl.org" target="_blank">LaafEntertain</a>
+        </div>
+        <div class="foot-col-title" style="margin-top:24px">Ventures</div>
+        <div class="foot-col-links">
+          <a href="https://care.laafstyl.org" target="_blank">Bright Future Aftercare</a>
+          <a href="https://auto.laafstyl.org" target="_blank">ChromeWorkx</a>
         </div>
       </div>
       <div>
