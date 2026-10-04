@@ -69,14 +69,15 @@ p{margin:0}
 .eco .orbit2{fill:none;stroke:var(--line);stroke-width:1}
 .eco .cn{stroke-width:2;stroke-linecap:round;fill:none;opacity:.55}
 .eco .pk{stroke-width:5;stroke-linecap:round;fill:none;stroke-dasharray:.02 .98;opacity:0}
-.eco .nd{cursor:pointer;transform-box:fill-box;transform-origin:center}
+.eco .nd{transform-box:fill-box;transform-origin:center}
 .eco .nd circle.bg{fill:var(--card);stroke-width:2.4;transition:fill .25s}
 .eco .nd .ic{fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-.eco .nd:hover circle.bg,.eco .nd:focus-visible circle.bg{fill:var(--card2)}
 .eco .nd .grow{transform-box:fill-box;transform-origin:center;transition:transform .3s cubic-bezier(.3,1.4,.5,1)}
-.eco .nd:hover .grow,.eco .nd:focus-visible .grow{transform:scale(1.1)}
-.eco .nd:focus-visible{outline:none}
-.eco .nd:focus-visible circle.bg{stroke:var(--gold);stroke-width:4}
+.eco-links{list-style:none;margin:0;padding:0}
+.eco-links a{position:absolute;display:block;width:25%;height:26%;border-radius:22px}
+.eco-links a:focus-visible{outline:3px solid var(--gold);outline-offset:-2px}
+.eco-wrap:has(a[data-k="0"]:hover) .nd[data-k="0"] circle.bg,.eco-wrap:has(a[data-k="1"]:hover) .nd[data-k="1"] circle.bg,.eco-wrap:has(a[data-k="2"]:hover) .nd[data-k="2"] circle.bg,.eco-wrap:has(a[data-k="3"]:hover) .nd[data-k="3"] circle.bg{fill:var(--card2)}
+.eco-wrap:has(a[data-k="0"]:hover) .nd[data-k="0"] .grow,.eco-wrap:has(a[data-k="1"]:hover) .nd[data-k="1"] .grow,.eco-wrap:has(a[data-k="2"]:hover) .nd[data-k="2"] .grow,.eco-wrap:has(a[data-k="3"]:hover) .nd[data-k="3"] .grow{transform:scale(1.1)}
 .eco text{font-family:var(--fh);text-anchor:middle}
 .eco .nm{fill:var(--ink);font-size:21px;font-weight:600}
 .eco .sb{fill:var(--mut);font-family:var(--fb);font-size:15px}
